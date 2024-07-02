@@ -1,0 +1,48 @@
+.date-picker-container {
+    position: relative;
+    margin-bottom: 20%;
+  }
+  
+  .date-picker-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .custom-calendar {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .red .rmdp-wrapper {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .red .rmdp-week-day {
+    font-weight: bold;
+  }
+  
+  .red .rmdp-day {
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+  }
+  
+  .red .rmdp-day:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .red .rmdp-selected {
+    background-color: #ff0000;
+    color: #fff;
+  }
+  
+  .red .rmdp-disabled {
+    color: #ccc;
+    pointer-events: none;
+  }

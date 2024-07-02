@@ -1,0 +1,796 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  font-family: "Karla", sans-serif;
+  line-height: 1.5;
+  color-scheme: white;
+  color: white;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  
+}
+
+html, body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.fullPage1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #A7D7C5;
+}
+
+.fullPage2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #61b898;
+}
+
+.fullPage3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(184, 225, 252);
+
+}
+
+.loginpage-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.2em;
+  color: black;
+  background-color: #F6FBF9;
+  border-radius: 40px;
+  text-align: center;
+  width: 560px;
+  height: 560px;
+  border: 1.5px solid white;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.information h1 {
+  color: #212B27;
+  width: 80%;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 71.79px;
+  text-align: center;
+  margin-top: 47px;
+}
+
+.information p {
+  color: #32403B;
+  width: 70%;
+  font-size: 18.5px;
+  font-weight: 450;
+  line-height: 25px;
+  text-align: center;
+  margin-top: -32px; 
+}
+p {
+  margin-top: 20px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+  
+}
+
+input {
+  border-radius: 12px;
+  height: 3.4em;
+  width:  24.59034em;
+  padding-left: 5px;
+  text-indent: 20px;
+  border: 1px solid lightgray; 
+  font-family: "Karla", sans-serif;
+  font-size: 18.5px;
+  font-weight: 400;
+}
+
+button {
+  border-radius: 17px;
+  padding: 0.5em 2.1em;
+  font-family: Karla;
+  font-size: 27.5px;
+  font-weight: 700;
+  line-height: 43.87px;
+  text-align: center;
+  background-color: #84C7AE;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  margin-top: 1em;
+  border: none;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+.HaveAccount {
+  color: #32403B;
+  font-size: 17.4px;
+  font-weight: 400;
+  line-height: 10px;
+  text-align: center;
+  
+}
+
+
+.not-found {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  color: black;
+  font-size: 5em;
+}
+
+.container {
+  height: 100vh;
+}
+
+.FruitContainer {
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  
+}
+
+.FruitCard {
+  margin-top: 10%;
+  background-color: rgb(192, 213, 192);
+  border-radius: 10px;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 5em;
+  color: black;
+}
+.FruitCard h2 {
+  font-size: 24px;
+  color: black;
+}
+
+.FruitCard p {
+  margin-top: 20px;
+  color: gray;
+}
+
+.FruitImage {
+  width: 100%;
+  max-height: 143.17px;
+}
+
+.signInbutton {
+  color: white;
+  height: 70px;
+  width: 250px;
+}
+
+.dashboard-container {
+  color:black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.right {
+  
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  
+  gap: 2%;
+  width: 80%;
+  height: 100%;
+}
+
+.dashboard-info {
+  margin-top: -2%;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: flex-start;
+  
+  width: 98%;
+  height: 87%;
+  gap: 2%;
+}
+
+.EFandT {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  width: 70%;
+  height: 98.5%;
+  
+  gap: 3%;
+
+}
+
+.right h1 {
+  font-weight: 1000;
+  width: 100%;
+  height: 5%;
+  font-size: 1em;
+}
+
+
+.EandF {
+  
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: center;
+  gap: 3%;
+  width: 100%;
+  height: 15%;
+  
+}
+
+.Employees {
+  
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid rgb(236, 234, 234);
+}
+
+.Employees h2 {
+  padding-left: 10px;
+  font-size: 0.8em;
+
+ 
+}
+
+.Employees p {
+  font-weight: 700;
+  padding-left: 10px;
+  font-size: 1.4em;
+  
+}
+
+.Freelancers {
+  font-weight: 700;
+  width: 100%;
+  height: 100%; 
+  border-radius: 10px;
+  border: 2px solid rgb(236, 234, 234);
+}
+
+.Freelancers h2 {
+  padding-left: 10px;
+  font-size: 0.8em;
+  
+}
+
+.Freelancers p {
+  padding-left: 10px;
+  font-size: 1.4em;
+  
+}
+
+
+
+.Transactions {
+  padding-top: 2%;
+  padding-left: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid rgb(236, 234, 234);
+  overflow: auto;
+} 
+
+.for-clear-button {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-portion {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8%;
+  margin-top: 20px;
+  width: 98%;
+  height: 5%;
+}
+
+.search-bar {
+  
+  border: none;
+  height: 100%; 
+  width: 75%; 
+  
+}
+
+.search-bar input {
+  border-radius: 5px;
+  font-size: 0.8em;
+  background-color: rgb(246, 243, 243); 
+  height: 100%; 
+  width: 100%;
+}
+
+.search-bar input::placeholder {
+  color: rgb(205, 202, 202)
+}
+
+.search-icon {
+  position: absolute;
+  left: 21.6%;
+  top: 4.4%;
+  width: 13px;
+}
+
+
+.notification-button {
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px; 
+  width: 40px; 
+  border: 2px solid black; 
+  border-radius: 50%; 
+  background: transparent; 
+  padding: 0; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.notification-button svg {
+  font-size: 0.8em;
+  stroke: black; 
+  stroke-width: 15; 
+}
+
+.notification-button:hover {
+  background-color: rgb(205, 202, 202); 
+}
+
+.notification-button:active {
+  background-color: rgb(183, 183, 183); 
+}
+
+.Message {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.add-button-container {
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  height: 100%;
+  padding-right: 20px;
+}
+
+.add-button {
+  width: 100%;
+  height: 100%;
+  font-size: 0.8em; 
+  color: white;
+  padding: 0; 
+  margin: 0; 
+  border: none; 
+  background-color: rgb(71, 54, 206); 
+  border-radius: 10px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+
+.Transactions table {
+  width: 99%;
+  border-collapse: collapse; 
+  border: none;
+}
+
+.Transactions th,
+.Transactions td {
+  
+  padding: 4px; 
+  text-align: left; 
+  font-size: 0.95em; 
+}
+
+.Transactions th {
+  
+  color: #333; 
+  font-weight: 1000;
+}
+
+.Transactions tr {
+  height: 24px; 
+}
+
+.tab-space {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 1000;
+}
+
+.tab-space span {
+  padding-right: 10px;
+}
+
+h3 {
+  margin-top: 10px;
+  font-size: 1em;
+  padding-left: 10px;
+}
+
+h4 {
+  font-size: 0.6em;
+  padding-left: 10px;
+  color: black; 
+}
+
+h5 {
+  margin-top: -10px;
+  font-size: 1.5em;
+  padding-left: 10px;
+  color: black; 
+}
+
+.profile-info h2 {
+  font-size: 16px;
+  padding-left: 10px;
+  margin-top: 0;
+}
+
+.profile-info p {
+  
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: -15px;
+}
+
+.overview {
+  border-radius: 10px;
+  border: 2px solid rgb(236, 234, 234);
+  width: 100%;
+  height: 100%;
+}
+
+.overview h1{
+  height: 5%;
+  padding-left: 10px;
+  width: 97%;
+}
+
+.overview h3{
+  color: rgb(205, 202, 202);
+  height: 6%;
+  padding-left: 10px;
+}
+
+.overview h2{
+  font-weight: 800;
+  margin-top: -30px;
+  height: 10%;
+  padding-left: 10px;
+}
+
+.labels {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.left {
+  padding-left: 2%;
+  background-color: rgb(233, 233, 233);
+  width: 18%;
+  height: 100%;
+  
+  
+}
+
+.left h2 {
+  font-weight: 1000;
+}
+
+.left h3 {
+  color: rgb(155, 155, 155);
+  padding: 0;
+  font-weight: 1000;
+}
+
+.left-buttons {
+  display: flex;
+  flex-direction: column;
+  height: 35%;  
+  
+}
+
+.left-buttons button {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  padding-left: 20px;
+}
+
+.left-button-active {
+  border-radius: 10px;
+  background-color: rgb(71, 54, 206);
+  display: flex; 
+  align-items: center;
+  justify-content: flex-start; 
+  height: 15%;  
+  font-size: 1em;
+  font-weight: 700;
+  width: 90%;
+  color: white;
+}
+
+.left-button {
+  border-radius: 10px;
+  background-color: rgb(233, 233, 233);
+  display: flex; 
+  align-items: center;
+  justify-content: flex-start; 
+  height: 15%;  
+  font-size: 1em;
+  font-weight: 1000;
+  width: 90%;
+  color: black;
+}
+
+.left-button:hover {
+  background-color: rgb(205, 202, 202);
+}
+
+.teams-data {
+  
+  margin-top: 10%;
+}
+
+.teams {
+  margin-top: 50px;
+}
+  
+.teams-item {
+  font-weight: 1000;
+}
+
+.left h4 {
+  margin-top: -20px;
+  padding-left: 30px;
+  font-size:1em;
+}
+
+
+.settings-button-container {
+  margin-top: 90px;
+
+}
+
+.fullPage4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(230, 242, 251);
+  color: black;
+  overflow: hidden; 
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  height: 564px;
+  width: 564px;
+  margin: -33px;
+  overflow: auto;
+  border: 2px solid aliceblue;
+  overflow-x: hidden;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  padding: 10px 0; 
+  
+  background-color: rgb(99, 99, 249);
+  color: white;
+
+}
+.questions-container {
+  width: 100%;
+  background-color: aliceblue;
+  overflow-y: auto; 
+  padding: 10px;
+  border-radius: 12px;
+  overflow-x: hidden;
+  
+  
+}
+
+.questions-container > div {
+  width: 100%;
+  margin: 20px;
+  background-color: aliceblue;
+}
+
+.todays-date {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 1.2em;
+  color: black; 
+  padding-left: 5%;  
+ 
+
+}
+
+.questions-container h2 {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.questions-container div div {
+  display: flex;
+  align-items: center;
+
+  
+  
+}
+
+.questions-container input[type="radio"] {
+  transform: scale(0.3); 
+  
+}
+
+.heading button {
+  
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  background-color: rgb(99, 99, 249);
+  color: white;
+}
+
+.submit-button {
+  background-color: rgb(99, 99, 249);
+  color: white;
+  margin-left: 40%;
+  font-size: 1.2em;
+  border-radius: 8px;
+  display: block; 
+  width: 24%; 
+  height: 15%;
+  text-align: center;
+  padding: 0px; 
+  
+}
+
+.an-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: -38%;
+  padding-left: 0px;
+  margin-bottom: -20px;
+  
+  
+}
+
+.an-option input[type="radio"] {
+  
+  margin-right: -27%;
+}
+
+.text-box-input {
+  font-size: 15px;
+  width: 50%;
+}
+
+.modal-box {
+  width: 100%;
+  height: 100%;
+}
+
+.delete-button-cell {
+  margin-top: 2px;
+}
+
+.error-message {
+  padding-left: 20px;
+  color: red;
+  font-weight: 700;
+}
+
+.char-limit-info {
+  padding-left: 20px;
+}
+
